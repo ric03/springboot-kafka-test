@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: test
+  kafka:
+    topic:
+      name: test-topic
+    consumer:
+      auto-offset-reset: earliest
+      group-id: test-group
+    listener:
+      ack-mode: manual
+      client-id: test-client-id
+      concurrency: 10
+      type: batch
+    admin:
+      client-id: admin-test-client-id
